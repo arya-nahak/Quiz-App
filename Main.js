@@ -18,7 +18,7 @@ function QuizApp() {
         mainObj.prev(mainObj.prev_button);
         mainObj.next(mainObj.next_button);
         mainObj.loadfunc()
-        mainObj.displayQuiz();
+        mainObj.displayQuiz(0);
         // mainObj.showResult();
         // mainObj.checkAnswer();
         mainObj.changeQuestion(mainObj.currentQuestion);
@@ -132,7 +132,7 @@ function QuizApp() {
             function (e) {
               //var radio = $(this).find('input:radio');
               $(this).prop("checked", true);
-              selectedopt = $(this).val();
+              mainObj.selectedopt = $(this).val();
             }
           );
     }
