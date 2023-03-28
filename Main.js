@@ -1,3 +1,4 @@
+// Code By Arya
 function QuizApp() {
   let mainObj = {
     isInit: false,
